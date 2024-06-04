@@ -2,6 +2,8 @@ import ellipse from '../assets/Ellipse-130.png'
 import { IoMdArrowForward } from "react-icons/io";
 import Img from "../assets/img.png"
 import bgGroup from '../assets/bgGroup.png';
+import Button from './Button';
+import TextBox from './TextBox';
 
 const Investment = () => {
     return (
@@ -11,7 +13,7 @@ const Investment = () => {
                 <img className='h-full' src={Img} alt="img" />
             </div>
             <div className='text-white w-[38rem] max-h-[35rem] flex flex-col justify-around'>
-                <div>
+                {/* <div>
                     <h1 className='border-b-2 border-gold inline-block text-2xl pb-1 mb-3'>Investments</h1>
                     <h1 className='text-4xl font-bold'>Our Digital Products On</h1>
                     <h1 className="text-gold text-4xl font-bold">Deposite Or Investments</h1>
@@ -23,12 +25,23 @@ const Investment = () => {
                         <li className='flex items-center'><img className='me-3' src={ellipse} alt="ellipseImg" />Sakuk</li>
                     </ul>
                 </div>
-                <div>
-                    <button className="bg-gold py-2 px-6 flex items-center rounded-full">
-                        Read More
-                        <IoMdArrowForward />
-                    </button>
-                </div>
+                <div className='relative'>
+                    <Button text={"Read More"} />
+                </div> */}
+                <TextBox
+                    title="Investments"
+                    subtitle={<><span className='font-bold'>Our Digital Products On</span> <br /> <span className='text-gold font-bold'>Deposite Or Investments</span></>}
+                    description={<><p className='leading-[1.5rem] my-5 font-light'>Through our Digital Products on Deposit or investments, you can fulfill your different requirements as per your need through digital payment mechanism or virtual cards. Our main products are mentioned below. However, they could be customized as per your need in Shariah Compliance ways.</p></>}
+                    subtitleClass="font-bold text-4xl"
+                    buttonText={"Get Started"}
+                >
+                    <ul className='mb-5'>
+                        <li className='flex items-center'><img className='me-3' src={ellipse} alt="ellipseImg" />Current</li>
+                        <li className='flex items-center'><img className='me-3' src={ellipse} alt="ellipseImg" />Saving</li>
+                        <li className='flex items-center'><img className='me-3' src={ellipse} alt="ellipseImg" />Fixed Deposite</li>
+                        <li className='flex items-center'><img className='me-3' src={ellipse} alt="ellipseImg" />Sakuk</li>
+                    </ul>
+                </TextBox>
             </div>
         </div>
     )

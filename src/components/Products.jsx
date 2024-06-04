@@ -8,6 +8,8 @@ import cardIcon2 from "../assets/productCard2.png";
 import cardIcon3 from "../assets/productCard3.png";
 import cardIcon4 from "../assets/productCard4.png";
 import cardBg from "../assets/productCard.png";
+import Button from './Button';
+import TextBox from './TextBox';
 
 const Products = () => {
     return (
@@ -54,14 +56,20 @@ const Products = () => {
                     </div>
                     {/* <img src={cards} alt="" /> */}
                 </div>
-                <div className='text-white max-h-[40rem] h-[40rem] flex flex-col justify-center'>
+                {/* <div className='text-white max-h-[40rem] h-[40rem] flex flex-col justify-center'>
                     <h1 className="border-b-2 border-gold w-fit text-2xl pb-1 mb-3">Products</h1>
                     <h1 className='font-bold text-4xl'>Our <span className='text-gold'>Islamic Fintech</span> Products Includes:</h1>
                     <p className='my-7 max-w-[30rem] w-[30rem]'>We have complete and very easy solution for Virtual Islamic / Digital Banking and different fintech products for Islamic banking including deposit and asset side for all requirements of clients.</p>
-                    <button className="bg-gold py-2 px-6 flex items-center rounded-full w-fit">
-                        All Products
-                        <IoMdArrowForward />
-                    </button>
+                    <Button text={"All Products"} />
+                </div> */}
+                <div className='text-white max-h-[40rem] h-[40rem] flex flex-col justify-center'>
+                    <TextBox
+                        title="Products"
+                        subtitle={<>Our <span className='text-gold'>Islamic Fintech</span> Products Includes:</>}
+                        description="We have complete and very easy solution for Virtual Islamic / Digital Banking and different fintech products for Islamic banking including deposit and asset side for all requirements of clients."
+                        buttonText="All Products"
+                        subtitleClass="font-bold text-4xl"
+                    />
                 </div>
             </div>
         </div>

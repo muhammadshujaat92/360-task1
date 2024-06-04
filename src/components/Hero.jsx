@@ -3,6 +3,8 @@ import ellipseImg from "../assets/Ellipse-130.png"
 import bgImg from "../assets/header-Img.png"
 import vectorImg from "../assets/Vector.png"
 import { IoMdArrowForward } from "react-icons/io";
+import Button from "./Button";
+import TextBox from "./TextBox";
 
 const Hero = () => {
     return (
@@ -12,7 +14,7 @@ const Hero = () => {
                     <div className="flex justify-end max-w-[13rem] mt-[2rem]">
                         <img src={ellipseImg} alt="ellipse" />
                     </div>
-                    <div>
+                    {/* <div>
                         <div>
                             <h1 className="text-white text-2xl border-b-2 border-gold w-fit pb-1">Virtual Islamic Banking</h1>
                             <h1 className="text-gold font-bold my-2 text-5xl">Transforming Finance</h1>
@@ -20,13 +22,21 @@ const Hero = () => {
                             <p className="text-white my-7">From Virtual Islamic/ Digital Banking and payment platforms to asset management, our FinTech products encompass a wide spectrum of offerings that are reshaping the financial landscape.</p>
                         </div>
                         <div className="flex items-center text-white">
-                            <button className="bg-gold rounded-full py-2 px-[2rem]">Get Started</button>
+                            <Button text={"Get Started"}/>
                             <button className="flex items-center ms-[1rem]">
                                 See Live Demo
                                 <FaPlayCircle className="text-gold text-xl ms-1" />
                             </button>
                         </div>
-                    </div>
+                    </div> */}
+                    <TextBox
+                        title="Virtual Islamic Banking"
+                        subtitle={<><span className='text-gold font-bold'>Transforming Finance</span> <br /> <span className='font-normal text-3xl'>with Fast & Easy!</span></>}
+                        description="From Virtual Islamic/ Digital Banking and payment platforms to asset management, our FinTech products encompass a wide spectrum of offerings that are reshaping the financial landscape."
+                        subtitleClass="font-bold text-5xl"
+                        buttonText={"Get Started"}
+                        secondBtn={"See Live Demo"}
+                    />
                 </div>
                 <div className="max-w-xl">
                     <img className="w-full" src={bgImg} alt="bgImg" />

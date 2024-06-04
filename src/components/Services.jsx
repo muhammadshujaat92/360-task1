@@ -7,6 +7,7 @@ import cardImg3 from "../assets/servicesCard3.png"
 import cardImg4 from "../assets/servicesCard4.png"
 import bannerImg from "../assets/servicesBanner.png"
 import ServicesCards from './ServicesCards'
+import Button from './Button'
 
 const Services = () => {
     return (
@@ -23,10 +24,11 @@ const Services = () => {
                     <ServicesCards icon={cardImg4} heading={"Low Cost Housing Finance"} text={"This product provides digital solutions for low-cost housing finance schemes. This creates employment and boosts demand in industries."} />
                 </div>
                 <div className='flex justify-center mb-[3rem]'>
-                    <button className="bg-gold py-2 px-6 flex items-center rounded-full">
+                    {/* <button className="bg-gold py-2 px-6 flex items-center rounded-full">
                         All Services
                         <IoMdArrowForward />
-                    </button>
+                    </button> */}
+                    <Button text={"All Services"} />
                 </div>
             </div>
             <div className='text-white relative flex justify-center items-center'>

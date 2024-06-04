@@ -1,5 +1,6 @@
 import logo from "../assets/logo.png"
 import { IoMdArrowForward } from "react-icons/io";
+import Button from "./Button";
 
 const Navbar = () => {
     return (
@@ -17,10 +18,11 @@ const Navbar = () => {
                 <li>About us</li>
             </ul>
             <div>
-                <button className="bg-[#D8B150] text-lg flex items-center py-2 px-8 rounded-full">
+                {/* <button className="bg-[#D8B150] text-lg flex items-center py-2 px-8 rounded-full">
                     Contact
                     <IoMdArrowForward />
-                </button>
+                </button> */}
+                <Button text={"Contact"}/>
             </div>
         </nav>
     )

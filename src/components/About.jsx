@@ -6,23 +6,29 @@ import secImg3 from '../assets/secImg3.png'
 import secImg4 from '../assets/secImg4.png'
 import secImg5 from '../assets/secImg5.png'
 import secImg6 from '../assets/secImg6.png'
+import Button from './Button';
+import TextBox from './TextBox';
 
 const About = () => {
     return (
         <div className='px-[5rem] py-[3rem]'>
             <div className='flex'>
-                <div className='text-white flex flex-col justify-around max-w-[60rem] h-[25rem] max-h-[25rem]'>
+                {/* <div className='text-white flex flex-col justify-around max-w-[60rem] h-[25rem] max-h-[25rem]'>
                     <div>
                         <h1 className='border-b-2 border-gold w-fit text-2xl pb-1 mb-3'>About Us</h1>
                         <h1 className='font-bold text-5xl'>We Promote Emerging</h1>
                         <h1 className='text-gold font-bold text-5xl'>Digital Experiences.</h1>
                         <p className='my-7'>We are dedicated to revolutionizing the way you manage your finances by seamlessly integrating cutting-edge technology with the principles of Islamic finance</p>
                     </div>
-                    <button className="bg-gold py-2 px-6 flex items-center rounded-full w-fit">
-                        Know More
-                        <IoMdArrowForward />
-                    </button>
-                </div>
+                    <Button text={"Know More"} />
+                </div> */}
+                <TextBox
+                    title="About Us"
+                    subtitle={<><span className='font-bold'>We Promote Emerging</span> <span className='text-gold font-bold'>Digital Experiences.</span></>}
+                    description="We are dedicated to revolutionizing the way you manage your finances by seamlessly integrating cutting-edge technology with the principles of Islamic finance."
+                    buttonText="Know More"
+                    subtitleClass="font-bold text-5xl"
+                />
                 <div className='w-[70rem] max-w-[70rem]'>
                     <img className='w-full' src={Img} alt="img" />
                 </div>

@@ -6,6 +6,7 @@ import cardImg2 from "../assets/blogCard2.png"
 import cardImg3 from "../assets/blogCard3.png"
 import BlogCards from './BlogCards';
 import bannerImg from "../assets/blogBanner.png"
+import Button from './Button';
 
 const Blogs = () => {
     return (
@@ -21,10 +22,11 @@ const Blogs = () => {
                     <BlogCards bgImage={cardImg1} />
                 </div>
                 <div className='my-[4rem] flex justify-center'>
-                    <button className="bg-gold py-2 px-6 flex items-center rounded-full">
+                    {/* <button className="bg-gold py-2 px-6 flex items-center rounded-full">
                         Read All Blogs
                         <IoMdArrowForward />
-                    </button>
+                    </button> */}
+                    <Button text={"Read All Blogs"} />
                 </div>
             </div>
             <div className='text-white relative flex justify-between items-center'>
